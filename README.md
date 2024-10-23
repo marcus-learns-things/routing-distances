@@ -4,6 +4,9 @@
 
 ```(linux/unix) python3 routing_distances.py (textfilename.txt)```
 
+## Example of textfile:
+![alt text](image.png)
+
 ## Design Thoughts
 My design thoughts for this project really came down to me breaking into 4 main steps.
 ### Steps
