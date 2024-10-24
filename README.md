@@ -11,7 +11,8 @@
 My design thoughts for this project really came down to me breaking into 4 main steps.
 ### Steps
 1. I needed a way to read an input file into the program, so I used argparse as well as pythons native tooling
-to read a txt file and process it into the parts i need for the algorithms.
+to read a txt file and process it into the parts i need for the algorithms. I also used argparse to intake
+the source node for the program.
 2. Next I needed to Build the network topology. I used a list to represent the graph where each node has connections
 with the respective cost
 3. I needed to implement the Distance-Vector, Dihjstra's, and the Path-Vector algorithms. I did this by making each

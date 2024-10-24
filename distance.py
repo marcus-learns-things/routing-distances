@@ -101,15 +101,15 @@ def print_results(algorithm_name, distances, paths, num_nodes, start_time):
 def main():
     # Running all algorithms and outputting results
     start_time = time.time()
-    distances, paths = distance_vector_routing(graph, num_nodes, 0)
+    distances, paths = distance_vector_routing(graph, num_nodes, source_node)
     print_results("Distance Vector Routing", distances, paths, num_nodes, start_time)
 
     start_time = time.time()
-    distances, paths = dijkstra_algorithm(graph, num_nodes, 0)
+    distances, paths = dijkstra_algorithm(graph, num_nodes, source_node)
     print_results("Dijkstra's Algorithm", distances, paths, num_nodes, start_time)
 
     start_time = time.time()
-    distances, paths = path_vector_routing(graph, num_nodes, 0)
+    distances, paths = path_vector_routing(graph, num_nodes, source_node)
     print_results("Path Vector Routing", distances, paths, num_nodes, start_time)
 
 
@@ -118,9 +118,11 @@ if __name__ == "__main__":
         description="This script runs 3 algorithms to calculate the shortest routing distance"
     )
     parser.add_argument("filename", help="The name of the file to process.")
+    parser.add_argument("sourcenode", help="The source node that we start with.")
 
     args = parser.parse_args()
 
     num_nodes, graph = read_network_topology(args.filename)
+    source_node = int(args.sourcenode)
 
     main()
