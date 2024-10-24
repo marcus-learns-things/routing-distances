@@ -1,8 +1,8 @@
 # Routing-Distances
 ## Command to Use(Terminal):
-```(windows/pwsh) python routing_distances.py (textfilename.txt)```
+```(windows/pwsh) python routing_distances.py (textfilename.txt) (number of starting source node)```
 
-```(linux/unix) python3 routing_distances.py (textfilename.txt)```
+```(linux/unix) python3 routing_distances.py (textfilename.txt) (number of starting source node)```
 
 ## Example of textfile:
 ![alt text](image.png)
